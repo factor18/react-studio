@@ -1,0 +1,20 @@
+{
+  "public": true,
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "name": "@factor18/react-studio",
+  "repository": "git@github.com:sarat1669/react-studio.git",
+  "author": "Sarat Chandra Balla <sarat1669@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack --watch --progress --config ./webpack.config.js",
+    "build": "webpack ./webpack.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "path": "^0.12.7",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
+}
