@@ -1,13 +1,13 @@
 {
   "public": true,
-  "version": "1.0.1",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "name": "@factor18/react-studio",
   "repository": "git@github.com:factor18/react-studio.git",
   "author": "Sarat Chandra Balla <sarat1669@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "rm -rf ./dist && npm run build",
     "start": "webpack --watch --progress --config ./webpack.config.js",
     "build": "NODE_ENV=production webpack --config ./webpack.config.js"
   },

@@ -5,9 +5,9 @@ module.exports = () => ({
   target: 'web',
   output: {
     filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
+    libraryTarget: 'commonjs2',
+    path: path.resolve(__dirname, 'dist'),
   },
-  externals: ["react"],
   module: {
     rules: [
       {
