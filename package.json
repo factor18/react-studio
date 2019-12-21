@@ -1,20 +1,33 @@
 {
   "public": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "name": "@factor18/react-studio",
-  "repository": "git@github.com:sarat1669/react-studio.git",
+  "repository": "git@github.com:factor18/react-studio.git",
   "author": "Sarat Chandra Balla <sarat1669@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "prepublish": "npm run build",
     "start": "webpack --watch --progress --config ./webpack.config.js",
-    "build": "webpack ./webpack.config.js"
+    "build": "NODE_ENV=production webpack --config ./webpack.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
     "babel-loader": "^8.0.6",
     "path": "^0.12.7",
+    "react": "^16.12.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "dependencies": {
+    "object-path": "^0.11.4"
   }
 }

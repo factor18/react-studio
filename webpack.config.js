@@ -1,13 +1,13 @@
 const path = require('path')
 
 module.exports = () => ({
-  entry: './src',
   mode: 'production',
+  target: 'web',
   output: {
     filename: 'index.js',
-    libraryTarget: 'commonjs2',
-    path: path.resolve(__dirname, './dist/')
+    path: path.resolve(__dirname, 'dist')
   },
+  externals: ["react"],
   module: {
     rules: [
       {
