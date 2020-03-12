@@ -28,6 +28,7 @@
     "react": "^16.12.0"
   },
   "dependencies": {
+    "@curefit/survey-client": "^0.1.11",
     "object-path": "^0.11.4"
   }
 }
