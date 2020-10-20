@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "@curefit/survey-client": "^0.1.11",
-    "object-path": "^0.11.4"
+    "object-path": "^0.11.5"
   }
 }
